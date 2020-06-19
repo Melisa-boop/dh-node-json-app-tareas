@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/codelando/dh-node-json-app-tareas/issues"
   },
-  "homepage": "https://github.com/codelando/dh-node-json-app-tareas#readme"
+  "homepage": "https://github.com/codelando/dh-node-json-app-tareas#readme",
+  "dependencies": {
+    "chalk": "^4.1.0"
+  }
 }
