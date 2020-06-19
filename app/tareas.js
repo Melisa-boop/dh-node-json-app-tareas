@@ -17,5 +17,28 @@ module.exports = {
         tareas.forEach(tarea => {
             console.log(tarea.titulo, '(' +  tarea.estado + ')');
         });
+    },
+    crear(titulo = '', descripcion = '', estado = 'pendiente') {
+
+        if (titulo.length > 5) {
+    
+            let tareas = leerArchivoJSON();
+    
+            let tareaNueva = {
+                titulo: titulo,
+                decripcion: descripcion,
+                estado: estado
+            }
+            
+            tareas.push(tareaNueva);
+            
+            escribirArchivoJSON(tareas);
+            
+            console.log('¡Tarea creada con éxito!')
+    
+        } else {
+            console.log('Debes ingresar un título y debe tener al menos 5 caracteres');
+        }
+    
     }
 }

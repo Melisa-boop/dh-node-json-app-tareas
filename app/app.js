@@ -9,6 +9,10 @@ switch (accion) {
         tareas.listar();
         break;
 
+    case 'crear':
+        tareas.crear(parametros[0], parametros[1])
+        break;
+        
     default:
         console.log();
         console.log('No entiendo esa acción');
