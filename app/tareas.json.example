@@ -18,10 +18,5 @@
   "titulo": "Refactorear con un forEach()",
   "descripcion": "Magic magic magic",
   "estado": "terminada"
- },
- {
-  "titulo": "Esta es una nueva tarea",
-  "descripcion": "Agregada a mano",
-  "estado": "terminada"
  }
 ]
